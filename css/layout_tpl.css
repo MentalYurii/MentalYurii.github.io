@@ -1,0 +1,217 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Плавні зміни властивостей лінків */
+
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*************************************/
+
+/* Зміни CSS коду розпочинати звідси */
+
+/*************************************/
+
+section {
+    min-height: 100vh;
+    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    padding: 50px 0;
+    /* Внітрішні відступи зверху та знизу у секціях <section> */
+}
+
+#s1 {
+    display: flex;
+    align-items: center;
+}
+
+#s2,
+#s4 {
+    background-color: #999;
+    /* Колір фону для секцій #s2, #s4 */
+}
+
+a {
+    color: #c00;
+    /* Колір текстових лінків */
+}
+
+a:focus,
+a:hover {
+    color: #c00;
+    /* Колір текстових лінків для псевдокласів */
+}
+
+/**************************************/
+
+/* Зміна властивостей для breakpoints */
+
+/**************************************/
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 15px;
+        /* Для Small додати відступи */
+        padding-right: 15px;
+        padding-top: 20px;
+/*        min-height: 50vh;*/
+        /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+    section {
+        padding: 25px 0;
+    }
+    h2 {
+        justify-content: center;
+    }
+
+}
+
+.header .logo-img-active,
+.header .logo-img-main,
+.header .nav-item.active .nav-item-hover:after,
+.header .nav-item:hover .nav-item-hover:after {
+    transition-duration: .4s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.7, 1, .7, 1)
+}
+
+.header .navbar-toggle:hover .toggle-icon.is-clicked {
+    background: rgba(81, 87, 105, 0)
+}
+
+.header .logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    max-height: 20px;
+    line-height: 65px;
+    padding-bottom: 15px;
+}
+
+h1 {
+    color: black;
+}
+
+.header .logo-wrap {
+    padding: 15px 0
+}
+
+.header .logo-img {
+    width: 50px;
+    height: auto;
+    max-width: 20%;
+    max-height: 20%;
+    vertical-align: middle;
+    padding-bottom: -10px;
+    margin-bottom: 10px;
+}
+
+.header .logo-img-active {
+    display: none
+}
+
+.logo {
+    padding-bottom: 15px;
+}
+
+h1 {
+    color: black;
+}
+
+.col-sm-6 {
+    text-align: center;
+}
+
+.container content-lg {
+    text-align: center;
+
+}
+
+h1 {
+    color: black;
+}
+
+#s4 {
+    min-height: 10vh;
+}
+
+#s2 {
+    padding: 0px;
+    min-height: inherit;
+}
+
+.figure {
+    margin: 0px 10px;
+}
+
+
+@media screen and (max-width:767px) {
+    p {
+        font-size: small; 
+    }
+    section: min-height: 20vh;
+}
+
+@media screen and (max-width:567px) {
+    .contact { 
+        text-align: center;
+        h2 {
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+    section {min-height: 20vh;} 
+    
+}
+
+h1 {
+    color: white;
+}
+h2 {
+    color: palevioletred;
+    text-align: right;
+}
+.about-me {
+    color: palevioletred;
+}
+#s4 {
+    background-color: plum;
+    color: aliceblue;
+}
+
+    
+    }
+@media screen and (max-width:768px) {
+     .about-me {
+        font-size:15px;
+       justify-content: center;
+        color: palevioletred;
+/*         max-height: 250px;*/
+         
+    }
+    section {
+        min-height: 30vh;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+#portfolio h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}

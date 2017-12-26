@@ -1,0 +1,87 @@
+#mainNav {
+    margin-top: 1.5rem;
+    padding: 0;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#mainNav .navbar-brand {
+    margin: .5rem 0 .75rem;
+}
+
+#mainNav .navbar-toggler {
+    border: none;
+    cursor: pointer;
+    outline: none;
+/*    background-color: #444;*/
+}
+
+.fa-bars:before {
+    color: #fc0;
+    font-size: 1.5rem;
+}
+
+#mainNav.navbar-shrink {
+    margin-top: 0;
+    background: rgb(72, 72, 72);
+}
+
+#mainNav .nav-link {
+    background: transparent;
+    border-radius: .25rem;
+    color: #eee;
+    margin-left: 1rem;
+    padding: .2rem .75rem;
+    text-align: right;
+}
+
+#mainNav .nav-link:hover {
+    color: #fff;
+}
+
+у    color: #fc0;
+ув444    color: #fc0;
+}
+
+/* Зміна вигляду навігаційної панелі для екранів менше 767px */
+
+@media screen and (max-width: 767px) {
+    #mainNav.navbar-expand-md .nav-link {
+        border-radius: 0;
+        margin: 0;
+    }
+    
+    #mainNav .navbar-nav {
+        background-color: #444;
+    }
+    
+    #mainNav .nav-link {
+        padding: .5rem 1.5rem;
+        border-top: 1px solid #666;
+    }
+    
+    #mainNav .nav-link,
+    #mainNav .nav-link.active,
+    #mainNav.navbar-shrink .nav-link:hover {
+        background: transparent;
+    }
+    
+    #page-top .container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #mainNav .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    #mainNav .navbar-toggler {
+        margin-right: 15px;
+    }
+    #mainNav .navbar-brand {
+        margin-left: 15px;
+    }
+}

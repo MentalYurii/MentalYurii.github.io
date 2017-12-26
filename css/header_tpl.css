@@ -1,0 +1,72 @@
+/****************************************/
+/* Приклад коду властивостей для header */
+/****************************************/
+
+/* Для закоментованих властивостей можна */
+/* вказати власні значення та зняти коментар */
+
+header {
+    background-color: #999;
+/*    background-image: url("../img/bg_header.jpg");*/
+    color:#fff;
+    text-align: center;
+    position: relative;
+}
+
+#fader {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header .row {
+    min-height: 100vh;  /* Приклад! Висота header завжди рівна висоті екрану пристрою */
+    justify-content: center;  /* Контейнери всередині header .row центруються по основній осі (горизонтально) */
+    align-items: center;  /* Контейнер всередині header .row центрується по поперечній осі (вертикально) */
+}
+
+.logo {
+    margin-top: -15px;
+}
+.logo {
+    padding-bottom:5px;
+}
+.me {
+    padding-left: 200px;
+}
+.about-me {
+    font-size: 25px;
+}
+
+@media screen and (max-width:768px) {
+     .about-me {
+        font-size:15px;
+       justify-content: center;
+        color: palevioletred;
+         max-height: 250px;
+    }
+     p {
+        text-align: center;
+    }
+h2 {
+        text-align: center;}
+    
+    }
+ .about-me {
+    text-align: right;
+}
+@media screen and (max-width:376px) {
+     .about-me {
+        font-size:20px;
+/*       justify-content: center;*/
+        color: palevioletred;
+        text-align: center;
+    }
+   
+  
+    }
+    
+    }
